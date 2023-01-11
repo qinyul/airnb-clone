@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .button {
+    @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100 transition transform duration-100 ease-out;
+  }
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -75,6 +81,9 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
+  .button {
+    color: white;
+  }
 }
 
 * {
@@ -108,4 +117,8 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.rdrDateRangePickerWrapper {
+  color: black;
 }
